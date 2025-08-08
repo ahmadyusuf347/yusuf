@@ -1,0 +1,40 @@
+body {
+  background: #333446;
+}
+
+.navbar {
+  background: #b8cfce;
+}
+
+.col {
+  color: #eaefef;
+}
+
+nav div a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333446;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+nav div div {
+  background: #b8cfce;
+}
+
+nav div div ul {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333446;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.row {
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row .col .card {
+}

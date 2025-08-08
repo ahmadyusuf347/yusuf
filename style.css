@@ -1,0 +1,23 @@
+.body {
+  background-color: #ffffffff;
+}
+.Header {
+  height: 100px;
+}
+.profil {
+  background-color: #afaeaeff;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 300px;
+}
+
+.foto-profil {
+  border-radius: 10%;
+  border-color: #6a3737ff;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+}
