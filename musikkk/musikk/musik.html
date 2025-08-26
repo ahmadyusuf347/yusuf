@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Musik Autoplay</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #222;
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background: #0072ff;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="bg-music" autoplay loop muted>
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-btn">▶</button>
+
+  <script>
+    const audio = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        btn.textContent = "▶";
+      } else {
+        audio.muted = false;
+        audio.play();
+        btn.textContent = "⏸";
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+</body>
+</html>

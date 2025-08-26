@@ -40,12 +40,16 @@
 	    </ul>
 		<div class="container-fluid">
 				<div class="row cb-slideshow-text-container ">
-					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section" style="padding-right: 30px;">
 					<header class="mb-5"><h1>Hallo,___</h1>
-					<P class="mb-5">“Saya adalah seorang Logo Desainer sekaligus Interior Desainer yang berfokus pada menciptakan karya visual dan ruang yang tidak hanya indah secara estetika, tetapi juga bermakna dan fungsional.”</P></header>
-                    <form action="#" method="get" class="subscribe-form">
+					<P class="mb-5">“Saya adalah seorang Logo Desainer sekaligus Interior Desainer yang berfokus pada menciptakan karya visual dan ruang yang tidak hanya indah secara estetika, tetapi juga bermakna dan fungsional.” <audio id="bg-music" autoplay loop muted>
+    <source src="/musik/Circus Travelling Show (128).mp3" type="audio/mpeg">
+  </audio>
+<button type="button music-btn" class="btn"><i class="bi bi-play-circle" id="music-btn" style="color: aquamarine;"></i></button>
+  </P></header>        
+          <form action="#" method="get" class="subscribe-form">
                	    	<div class="row form-section">
-							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="col-md-5 col-sm-5 col-xs-5">      
 								<a style="text-decoration: none; color: rgb(255, 255, 255);" href="CV.pdf" download><button type="button" class="btn btn-outline-light btn-lg">Download Portfolio</button></a>
 							</div>
 						
@@ -74,7 +78,25 @@
       </div>
     </div>
   </footer>
-		
+<!--script music-->
+	<script>
+    const audio = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        btn.textContent = "▶";
+      } else {
+        audio.muted = false;
+        audio.play();
+        btn.textContent = "⏸";
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
 	</body>
 
 	<script type="text/javascript" src="js/particles.js"></script>
